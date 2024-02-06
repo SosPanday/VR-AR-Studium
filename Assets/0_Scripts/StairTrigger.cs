@@ -27,6 +27,8 @@ public class StairTrigger : MonoBehaviour
             if(glassBrokenSFX != null)
             {
                 // Play particle effect
+
+                // WORKS BUT AT THE PLAYERS FEET???? JUST NEED TO CHANGE POSITION MAYBE + (VECTOR3.LEFT *2)
                 GameObject breakEffect = Instantiate(glassBrokenVFX, transform.position, Quaternion.identity, transform);
             }
 
