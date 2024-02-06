@@ -5,7 +5,17 @@ using UnityEngine;
 public class StairTrigger : MonoBehaviour
 {
     public GameObject previousStair;
+    public GameObject triggerObject;
 
+    private void Start()
+    {
+        Transform triggerTransform = transform.Find("Trigger");
+        if (triggerTransform != null)
+        {
+            GameObject triggerObject = triggerTransform.gameObject;
+            OnTriggerEnter(triggerObject.GetComponent<BoxCollider>());
+        }
+    }
     private void OnTriggerEnter(Collider other)
     {
         // Check for player
