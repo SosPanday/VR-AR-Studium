@@ -30,8 +30,11 @@ public class StaircaseGenerator : MonoBehaviour
             GameObject stairInstance = Instantiate(stairPrefab, transform);
 
             // Add Scripts to Stair
-            StairTrigger stairTrigger = stairInstance.AddComponent<StairTrigger>();
-            stairTrigger.previousStair = previousStair;
+            StairTrigger stairTrigger = stairInstance.GetComponentInChildren<StairTrigger>();
+
+            if (stairTrigger != null)
+                stairTrigger.previousStair = previousStair;
+
             previousStair = stairInstance;
 
             // Correct Position for Stairs
