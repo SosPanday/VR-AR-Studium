@@ -7,7 +7,6 @@ public class settingsFlag : MonoBehaviour
 {
     public int stairLength = 0;
 
-    enum StairType { Stone, Wood, Glass };
     // Start is called before the first frame update
     void Start()
     {

@@ -5,11 +5,21 @@ using UnityEngine;
 public class StaircaseGenerator : MonoBehaviour
 {
     public GameObject stairPrefab;
+    public GameObject stairWood;
+    public GameObject stairGlass;
+    public StairType stairType;
     public int stairLength = 10;
 
     // Start is called before the first frame update
     void Start()
     {
+        if(stairType == StairType.Wood)
+        {
+            stairPrefab = stairWood;
+        } else if (stairType == StairType.Glass)
+        {
+            stairPrefab = stairGlass;
+        }
         GenerateStairs();
     }
 
