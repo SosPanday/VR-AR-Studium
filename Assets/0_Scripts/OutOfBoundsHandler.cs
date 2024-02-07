@@ -50,7 +50,7 @@ public class OutOfBoundsHandler : MonoBehaviour
 
         blackScreen.color = targetColor; // Ensure it's fully black at the end
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
         SceneManager.LoadScene(scenename);
     }
 }
