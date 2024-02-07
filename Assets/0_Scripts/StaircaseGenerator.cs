@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
 
 public class StaircaseGenerator : MonoBehaviour
@@ -11,9 +12,15 @@ public class StaircaseGenerator : MonoBehaviour
     public StairType stairType;
     public int stairLength = 10;
 
+    public static StairType stastairType = StairType.Glass;
+
+    public static int stastairLength = 7;
+
     // Start is called before the first frame update
     void Start()
     {
+            stairType = stastairType;
+            stairLength = stastairLength;
         if(stairType == StairType.Wood)
         {
             stairPrefab = stairWood;
