@@ -4387,6 +4387,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &330320225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330320218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e31516b0a4090a24c8a14820285b99da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shakeDuration: 1.5
+  shakeMagnitude: 0.15
+  shakeDelay: 2
+  timeDelay: 0
 --- !u!1 &330864294
 GameObject:
   m_ObjectHideFlags: 0
@@ -19617,7 +19633,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1709251733
 Transform:
   m_ObjectHideFlags: 0
@@ -21324,6 +21340,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2871854915951832588, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 330320222}
+    - targetCorrespondingSourceObject: {fileID: 2871854915951832588, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 330320225}
     - targetCorrespondingSourceObject: {fileID: 2871854915733156399, guid: 65eb6b98091a5734ba9d9ca871cef69a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1997474290}
@@ -21511,6 +21530,7 @@ MonoBehaviour:
   stairStone: {fileID: 5929286168362229836, guid: d3f975da44274c34f8afe083e11ecc04, type: 3}
   stairWood: {fileID: 7938049209669695990, guid: 61608aa1271465c4b849b232832b0bb8, type: 3}
   stairGlass: {fileID: 2101218727528991812, guid: 347df1845293dfe4f962f71eb16a9f4a, type: 3}
+  finishPlatform: {fileID: 5893473564468539487, guid: ef6188f2b59dd7a42a0b6d6afa349c4c, type: 3}
   stairType: 1
   stairLength: 15
 --- !u!4 &1869019375
@@ -23675,7 +23695,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2045986019
 Transform:
   m_ObjectHideFlags: 0

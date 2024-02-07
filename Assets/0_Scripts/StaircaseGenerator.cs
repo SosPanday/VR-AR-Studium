@@ -5,10 +5,13 @@ using UnityEngine;
 
 public class StaircaseGenerator : MonoBehaviour
 {
+    [Header("Prefabs")]
     public GameObject stairPrefab;
     public GameObject stairStone;
     public GameObject stairWood;
     public GameObject stairGlass;
+
+    public GameObject finishPlatform;
     public StairType stairType;
     public int stairLength = 10;
 
