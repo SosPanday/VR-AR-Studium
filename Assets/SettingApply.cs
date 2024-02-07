@@ -22,4 +22,10 @@ public class SettingApply : MonoBehaviour
         float l = GetComponent<Slider>().value;
         StaircaseGenerator.stastairLength = (int)(6 + l*20);
     }
+
+    public void ApplyShake()
+    {
+        bool l = GetComponent<Toggle>().isOn;
+        StaircaseGenerator.shake = l;
+    }
 }

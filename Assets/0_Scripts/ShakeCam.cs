@@ -14,6 +14,10 @@ public class ShakeCam : MonoBehaviour
     void Start()
     {
         originalPosition = transform.localPosition;
+        if(!StaircaseGenerator.shake)
+        {
+            enabled = false;
+        }
     }
 
     private void Update()

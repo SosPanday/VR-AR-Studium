@@ -16,7 +16,7 @@ public class StaircaseGenerator : MonoBehaviour
     public int stairLength = 10;
 
     public static StairType stastairType = StairType.Glass;
-
+    public static bool shake = false;
     public static int stastairLength = 7;
 
     // Start is called before the first frame update
