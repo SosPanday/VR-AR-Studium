@@ -13,6 +13,8 @@ public class SettingApply : MonoBehaviour
         StaircaseGenerator.stastairType = StairType.Glass;
         if(ty == 1)
             StaircaseGenerator.stastairType = StairType.Wood;
+        if(ty == 2)
+            StaircaseGenerator.stastairType = StairType.Stone;
     }
 
     public void ApplyLength()
