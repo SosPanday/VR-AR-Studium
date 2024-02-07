@@ -4,12 +4,29 @@ using UnityEngine;
 
 public class AudioManager_1 : MonoBehaviour
 {
-    public AudioSource BGM;
+    public static AudioSource BGM;
+    public static AudioClip newTrack;
+    public static AudioClip defaultTrack;
 
-    public void changeBGM(AudioClip music)
+    public static void changeBGM(int number)
     {
         BGM.Stop();
-        BGM.clip = music;
+        BGM.clip = AudioSwitch(number);
         BGM.Play();
+    }
+
+    public static AudioClip AudioSwitch(int number)
+    {
+        switch(number)
+        {
+            case (0):
+                return defaultTrack;
+
+            case (1):
+                return newTrack;
+
+            default:
+                return defaultTrack;
+        }
     }
 }
