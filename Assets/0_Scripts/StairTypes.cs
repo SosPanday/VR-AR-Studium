@@ -3,3 +3,11 @@ public enum StairType {
     Wood, 
     Glass 
 };
+
+public enum StairLength
+{
+    Small,
+    Medium,
+    Large,
+    Evilsize
+}

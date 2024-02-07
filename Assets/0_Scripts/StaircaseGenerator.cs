@@ -5,6 +5,7 @@ using UnityEngine;
 public class StaircaseGenerator : MonoBehaviour
 {
     public GameObject stairPrefab;
+    public GameObject stairStone;
     public GameObject stairWood;
     public GameObject stairGlass;
     public StairType stairType;
@@ -19,6 +20,9 @@ public class StaircaseGenerator : MonoBehaviour
         } else if (stairType == StairType.Glass)
         {
             stairPrefab = stairGlass;
+        } else
+        {
+            stairPrefab = stairStone;
         }
         GenerateStairs();
     }
